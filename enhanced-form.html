@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enhanced Form & Layout Example</title>
+</head>
+<body>
+  <header>
+    <h1>My Sample Webpage with Form</h1>
+    <p>Demonstrating lists, media, tables, and a complete HTML5 form with validation and accessibility.</p>
+  </header>
+
+  <section>
+    <h2>1. List Example</h2>
+    <ul>
+      <li>First item</li>
+      <li>Second item</li>
+      <li>Third item</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>2. Table Example</h2>
+    <table border="1" >
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Availability</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Widget A</td>
+          <td>$10.00</td>
+          <td>In Stock</td>
+        </tr>
+        <tr>
+          <td>Widget B</td>
+          <td>$20.00</td>
+          <td>Out of Stock</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>3. Media Example</h2>
+    <picture>
+      <img src="https://www.pexels.com/photo/scenic-view-of-jet-d-eau-in-geneva-switzerland-32980057/" alt="Placeholder image">
+    </picture>
+    <p>This is a placeholder image for demonstration purposes.</p>
+  </section>
+
+  <section>
+    <h2>4. Sample Form</h2>
+    <form action="#" method="post" autocomplete="on">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="fname">First Name: *</label>
+        <input type="text" id="fname" name="firstname" placeholder="John" required autocomplete="given-name">
+
+        <label for="email">Email: *</label>
+        <input type="email" id="email" name="email" placeholder="john@example.com" required autocomplete="email">
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+               placeholder="123-456-7890" title="Format: 123-456-7890" autocomplete="tel">
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Setup</legend>
+        <label for="username">Username: *</label>
+        <input type="text" id="username" name="username" minlength="4" required autocomplete="username">
+
+        <label for="password">Password: *</label>
+        <input type="password" id="password" name="password" minlength="6" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="1" max="120" autocomplete="bday">
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+        <label>
+          <input type="checkbox" name="subscribe"> Subscribe to newsletter
+        </label><br>
+        <label for="color">Favorite Color:</label>
+        <input type="text" id="color" name="color" readonly value="Blue">
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+</body>
+</html>
